@@ -1,0 +1,3 @@
+class Routes {
+  String initial = '/';
+}
