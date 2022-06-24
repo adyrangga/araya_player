@@ -54,4 +54,11 @@ class LocalSP {
   Future setRepeat(RepeatState repeatMode) async {
     await SharedPrefs().setString(Constants.spRepeatMode, repeatMode.name);
   }
+
+  String getPathFile(int index) {
+    final spPlaylist = fetchListMapSpPlaylist();
+    final data = spPlaylist.map((e) => PlaylistSpModel.fromMap(e)).toList();
+    final pathFile = data.elementAt(index).url;
+    return pathFile;
+  }
 }

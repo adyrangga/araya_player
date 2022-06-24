@@ -1,6 +1,7 @@
 import 'package:araya_core_prefs/araya_core_prefs.dart';
 import 'package:araya_player/config/route_generator.dart';
 import 'package:araya_player/config/routes.dart';
+import 'package:araya_player/notifiers/video_control_provider.dart';
 import 'package:araya_player/screens/audio_player_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +19,7 @@ void main() async {
     providers: [
       // araya core changeThemeProvider
       ChangeNotifierProvider(create: (_) => ArayaThemeProvider()),
+      ChangeNotifierProvider(create: (_) => VideoControlProvider()),
     ],
     child: const App(),
   ));
@@ -49,7 +51,7 @@ class _AppState extends State<App> {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       theme: ThemeData.dark(),
-      initialRoute: Routes().initial,
+      initialRoute: Routes.initial,
       onGenerateRoute: RouteGenerator.generateRoute,
       home: const AudioPlayerScreen(),
     );

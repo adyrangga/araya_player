@@ -131,7 +131,7 @@ class PageManager {
   }
 
   void play() => _audioHandler.play();
-  void pause() => _audioHandler.pause();
+  Future pause() async => _audioHandler.pause();
 
   void seek(Duration position) => _audioHandler.seek(position);
 

@@ -42,7 +42,7 @@ dependencies:
   just_audio: ^0.9.24
 
   # plugin for displaying inline video with other Flutter widgets on Android, iOS, and web.
-  # video_player: ^2.4.4
+  video_player: ^2.4.4
 
   # Service Locator that allows to decouple the interface from a concrete implementation and to access the concrete implementation from everywhere in your App.
   get_it: ^7.2.0

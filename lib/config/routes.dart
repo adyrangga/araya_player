@@ -1,3 +1,4 @@
 class Routes {
-  String initial = '/';
+  static const String initial = '/';
+  static const String videoPlayer = '/video-player';
 }
