@@ -1,3 +1,3 @@
 class Routes {
-  String initial = '/';
+  static const String initial = '/';
 }

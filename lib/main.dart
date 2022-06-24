@@ -49,7 +49,7 @@ class _AppState extends State<App> {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       theme: ThemeData.dark(),
-      initialRoute: Routes().initial,
+      initialRoute: Routes.initial,
       onGenerateRoute: RouteGenerator.generateRoute,
       home: const AudioPlayerScreen(),
     );

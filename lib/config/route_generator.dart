@@ -1,10 +1,11 @@
+import 'package:araya_player/config/routes.dart';
 import 'package:araya_player/screens/audio_player_screen.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case '/':
+      case Routes.initial:
         return MaterialPageRoute(builder: (_) => const AudioPlayerScreen());
       // if want to send arguments, final args = settings.arguments;
       // return MaterialPageRoute(builder: (_) => AboutPage(args));

@@ -48,7 +48,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
   }
 
   Widget _buildPopupMenu(BuildContext context) {
-    final items = ['Add Item', 'Add Playlist'];
+    final items = ['Add Item'];
 
     return PopupMenuButton(
       padding: const EdgeInsets.all(0),
